@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>rechercher un produite</title>
+  </head>
+  <body>
+    <header>
+      <div class="cadre">
+        <div class="amazon">
+          <a href="index.html" class="logo"
+            ><img src="Amazon.png" alt="Amazon"
+          /></a>
+          <a href="recherche.html" target="_blank"
+            ><input type="text" placeholder="cherchez un produit"
+          /></a>
+        </div>
+        <nav>
+          <div class="aconte">
+            <a href="">Sing In </a>
+            <a href="">Create account</a>
+          </div>
+          <a href="" class="MR">
+            <img src="Morocco.png" alt="Morocco" />
+          </a>
+          <button onclick="show()" class="Shippingcrd">
+            <img src="Shopping Cart.png" alt="Shipping" />
+            <button id="clos" onclick="show()">
+              <img src="effacer.png" alt="" />
+            </button>
+          </button>
+
+          <div class="burgernav"></div>
+        </nav>
+        <nav class="nav_menu">
+          <a href=""><img src="menu.png" alt="" /></a>
+        </nav>
+      </div>
+    </header>
+    <main id="pricipale">
+      <nav class="sidebar_panier">
+        <div class="chop_title">
+          <h1>Shopping</h1>
+          <h1>card</h1>
+        </div>
+        <div class="panier" id="panier1">
+          <div class="premier_box">
+            <div class="image_titre">
+              <img src="keyboard.webp" alt="keyboard" />
+              <div class="titre">
+                <h1>Product Name</h1>
+                <span>Variant</span>
+                <h1>$1900</h1>
+                <p>Shipping $150</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="delete_plus">
+            <div class="delete_like">
+              <button class="dl" id="hideButton1">
+                <img src="delete.png" alt="delete" />
+              </button>
+            </div>
+            <div class="plus_moindx">
+              <button onclick="plusContiter()">+</button>
+              <h3 class="BUT">1</h3>
+              <button onclick="minusContiter()">-</button>
+            </div>
+          </div>
+        </div>
+        <div class="panier" id="panier2">
+          <div class="premier_box">
+            <div class="image_titre">
+              <img src="keyboard.webp" alt="keyboard" />
+              <div class="titre">
+                <h1>Product Name</h1>
+                <span>Variant</span>
+                <h1>$1900</h1>
+                <p>Shipping $150</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="delete_plus">
+            <div class="delete_like">
+              <button class="dl" id="hideButton2">
+                <img src="delete.png" alt="delete" />
+              </button>
+            </div>
+            <div class="plus_moindx">
+              <button onclick="plusContiter2()">+</button>
+              <h3 class="BUT2">1</h3>
+              <button onclick="minusContiter2()">-</button>
+            </div>
+          </div>
+        </div>
+        <div class="panier" id="panier3">
+          <div class="premier_box">
+            <div class="image_titre">
+              <img src="keyboard.webp" alt="keyboard" />
+              <div class="titre">
+                <h1>Product Name</h1>
+                <span>Variant</span>
+                <h1>$1900</h1>
+                <p>Shipping $150</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="delete_plus">
+            <div class="delete_like">
+              <button class="dl" id="hideButton3">
+                <img src="delete.png" alt="delete" />
+              </button>
+            </div>
+            <div class="plus_moindx">
+              <button onclick="plusContiter3()">+</button>
+              <h3 class="BUT3">1</h3>
+              <button onclick="minusContiter3()">-</button>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="X">
+          <div class="total_prix">
+            <h2>TOTAL Prix :</h2>
+            <h2 class="TT">5700 $</h2>
+          </div>
+          <div class="pey_card">
+            <a href="shipping.html">
+              <button class="Checkout">Checkout</button>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <section id="leftcontent">
+        <div class="check">
+           <h1>Marques</h1>
+          <input type="checkbox" />
+          <label> Redragon</label><br />
+          <input type="checkbox" />
+          <label> Razer</label><br />
+          <input type="checkbox" />
+          <label> Corsair</label><br />
+          <input type="checkbox" />
+          <label> RK ROYAL KLUDGE</label><br />
+        </div>
+        <div class="ship">
+          <h1>Shipping</h1>
+          <input type="checkbox" />
+          <label> Redragon</label><br />
+          <input type="checkbox" />
+          <label> Razer</label><br />
+          <input type="checkbox" />
+          <label> Corsair</label><br />
+          <h1>Price</h1>
+          <label>0$</label>
+          <input type="range">
+          <label>500$</label>
+        </div>
+      </section>
+      <section id="sect">
+        <div class="result">
+            <div class="key">
+                <h2>1 - 12 over 2000 result for</h2>
+                <h2 class="keyboard">“Keyboard”</h2>
+            </div>
+         <div class="moste">
+            <label>Sort by :</label>
+            <select name="moste raview">
+                <option value="moste review">moste review</option>
+                <option value="Redragon">Redragon</option>
+                <option value="Razer">Razer</option>
+                <option value="Corsair">Corsair</option>
+            </select>
+         </div>
+        </div>
+        <div class="allfree">
+        <div class="freeshopping">
+            <div class="free">
+                <h3>free shopping</h2>
+            </div>
+            <div>
+                <input type="radio" name="rd">
+            </div>
+        </div>
+        <div class="freeshopping">
+            <div class="free">
+                <h3>free shopping</h2>
+            </div>
+            <div>
+                <input type="radio"  name="rd">
+            </div>
+        </div>
+        <div class="freeshopping">
+            <div class="free">
+                <h3>free shopping</h2>
+            </div>
+            <div>
+                <input type="radio"  name="rd">
+            </div>
+        </div>
+        <div class="clear">
+            <a href=""> <h2> Clear All Filters </h2> </a>
+        </div>
+      </div>
+        <div class="bestPD">
+            <a href="details.html" target="_blank">
+                <div class="produit1">
+                    <img src="keyboard.webp" alt="keyboard" class="board" />
+                    <div class="prix_l">
+                        <span>$1200</span>
+                        <span>$1500</span>
+                        <span></span>
+                      </div>
+                    <p>
+                      hello anass , hello aziz , hello world , hello anass , hello aziz
+                      , hello world , hello me
+                    </p>
+                    <div class="BUT">
+                      <div class="RT">
+                        <img src="Star.png" alt="" />
+                        <h3>5.0</h3>
+                      </div>
+                      <hr class="linee" />
+                      <p>Sold 120</p>
+                      <div class="RT2">
+                        <img src="Mall.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+            </a>
+            
+              <a href="details.html" target="_blank">
+                <div class="produit1">
+                <img src="keyboard.webp" alt="keyboard" class="board" />
+                <div class="prix_l">
+                    <span>$1200</span>
+                    <span>$1500</span>
+                    <span></span>
+                  </div>
+                <p>
+                  hello anass , hello aziz , hello world , hello anass , hello aziz
+                  , hello world , hello me
+                </p>
+                <div class="BUT">
+                  <div class="RT">
+                    <img src="Star.png" alt="" />
+                    <h3>5.0</h3>
+                  </div>
+                  <hr class="linee" />
+                  <p>Sold 120</p>
+                  <div class="RT2">
+                    <img src="Mall.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="details.html" target="_blank">
+              <div class="produit1">
+                <img src="keyboard.webp" alt="keyboard" class="board" />
+                <div class="prix_l">
+                    <span>$1200</span>
+                    <span>$1500</span>
+                    <span></span>
+                  </div>
+                <p>
+                  hello anass , hello aziz , hello world , hello anass , hello aziz
+                  , hello world , hello me
+                </p>
+                <div class="BUT">
+                  <div class="RT">
+                    <img src="Star.png" alt="" />
+                    <h3>5.0</h3>
+                  </div>
+                  <hr class="linee" />
+                  <p>Sold 120</p>
+                  <div class="RT2">
+                    <img src="Mall.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="details.html" target="_blank">
+              <div class="produit1">
+                <img src="keyboard.webp" alt="keyboard" class="board" />
+                <div class="prix_l">
+                    <span>$1200</span>
+                    <span>$1500</span>
+                    <span></span>
+                  </div>
+                <p>
+                  hello anass , hello aziz , hello world , hello anass , hello aziz
+                  , hello world , hello me
+                </p>
+                <div class="BUT">
+                  <div class="RT">
+                    <img src="Star.png" alt="" />
+                    <h3>5.0</h3>
+                  </div>
+                  <hr class="linee" />
+                  <p>Sold 120</p>
+                  <div class="RT2">
+                    <img src="Mall.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="details.html" target="_blank">
+              <div class="produit1">
+                <img src="keyboard.webp" alt="keyboard" class="board" />
+                <div class="prix_l">
+                    <span>$1200</span>
+                    <span>$1500</span>
+                    <span></span>
+                  </div>
+                <p>
+                  hello anass , hello aziz , hello world , hello anass , hello aziz
+                  , hello world , hello me
+                </p>
+                <div class="BUT">
+                  <div class="RT">
+                    <img src="Star.png" alt="" />
+                    <h3>5.0</h3>
+                  </div>
+                  <hr class="linee" />
+                  <p>Sold 120</p>
+                  <div class="RT2">
+                    <img src="Mall.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="details.html" target="_blank">
+              <div class="produit1">
+                <img src="keyboard.webp" alt="keyboard" class="board" />
+                <div class="prix_l">
+                    <span>$1200</span>
+                    <span>$1500</span>
+                    <span></span>
+                  </div>
+                <p>
+                  hello anass , hello aziz , hello world , hello anass , hello aziz
+                  , hello world , hello me
+                </p>
+                <div class="BUT">
+                  <div class="RT">
+                    <img src="Star.png" alt="" />
+                    <h3>5.0</h3>
+                  </div>
+                  <hr class="linee" />
+                  <p>Sold 120</p>
+                  <div class="RT2">
+                    <img src="Mall.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="details.html" target="_blank">
+              <div class="produit1">
+                <img src="keyboard.webp" alt="keyboard" class="board" />
+                <div class="prix_l">
+                    <span>$1200</span>
+                    <span>$1500</span>
+                    <span></span>
+                  </div>
+                <p>
+                  hello anass , hello aziz , hello world , hello anass , hello aziz
+                  , hello world , hello me
+                </p>
+                <div class="BUT">
+                  <div class="RT">
+                    <img src="Star.png" alt="" />
+                    <h3>5.0</h3>
+                  </div>
+                  <hr class="linee" />
+                  <p>Sold 120</p>
+                  <div class="RT2">
+                    <img src="Mall.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="details.html" target="_blank">
+              <div class="produit1">
+                <img src="keyboard.webp" alt="keyboard" class="board" />
+                <div class="prix_l">
+                    <span>$1200</span>
+                    <span>$1500</span>
+                    <span></span>
+                  </div>
+                <p>
+                  hello anass , hello aziz , hello world , hello anass , hello aziz
+                  , hello world , hello me
+                </p>
+                <div class="BUT">
+                  <div class="RT">
+                    <img src="Star.png" alt="" />
+                    <h3>5.0</h3>
+                  </div>
+                  <hr class="linee" />
+                  <p>Sold 120</p>
+                  <div class="RT2">
+                    <img src="Mall.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="details.html" target="_blank">
+              <div class="produit1">
+                <img src="keyboard.webp" alt="keyboard" class="board" />
+                <div class="prix_l">
+                    <span>$1200</span>
+                    <span>$1500</span>
+                    <span></span>
+                  </div>
+                <p>
+                  hello anass , hello aziz , hello world , hello anass , hello aziz
+                  , hello world , hello me
+                </p>
+                <div class="BUT">
+                  <div class="RT">
+                    <img src="Star.png" alt="" />
+                    <h3>5.0</h3>
+                  </div>
+                  <hr class="linee" />
+                  <p>Sold 120</p>
+                  <div class="RT2">
+                    <img src="Mall.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
+        </div>
+      </section>
+    </main>
+    <footer>
+        <div class="footere">
+          <a href="">About</a>
+          <a href="">Support</a>
+          <a href="">FQA</a>
+          <p>copy right 2023</p>
+        </div>
+      </footer>
+  </body>
+</html>
+<script src="style.js"></script>

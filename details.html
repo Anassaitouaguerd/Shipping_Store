@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>details du produit</title>
+  </head>
+  <body>
+    <header>
+      <div class="cadre">
+        <div class="amazon">
+          <a href="index.html" class="logo"
+            ><img src="Amazon.png" alt="Amazon"
+          /></a>
+          <a href="recherche.html" target="_blank"
+            ><input type="text" placeholder="cherchez un produit"
+          /></a>
+        </div>
+        <nav>
+          <div class="aconte">
+            <a href="">Sing In </a>
+            <a href="">Create account</a>
+          </div>
+          <a href="" class="MR">
+            <img src="Morocco.png" alt="Morocco" />
+          </a>
+          <button onclick="show()" class="Shippingcrd">
+            <img src="Shopping Cart.png" alt="Shipping" />
+            <button id="clos" onclick="show()">
+              <img src="effacer.png" alt="" />
+            </button>
+          </button>
+
+          <div class="burgernav"></div>
+        </nav>
+        <nav class="nav_menu">
+          <a href=""><img src="menu.png" alt="" /></a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <nav class="sidebar_panier">
+        <div class="chop_title">
+          <h1>Shopping</h1>
+          <h1>card</h1>
+        </div>
+        <div class="panier" id="panier1">
+          <div class="premier_box">
+            <div class="image_titre">
+              <img src="keyboard.webp" alt="keyboard" />
+              <div class="titre">
+                <h1>Product Name</h1>
+                <span>Variant</span>
+                <h1>$1900</h1>
+                <p>Shipping $150</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="delete_plus">
+            <div class="delete_like">
+              <button class="dl" id="hideButton1">
+                <img src="delete.png" alt="delete" />
+              </button>
+            </div>
+            <div class="plus_moindx">
+              <button onclick="plusContiter()">+</button>
+              <h3 class="BUT">1</h3>
+              <button onclick="minusContiter()">-</button>
+            </div>
+          </div>
+        </div>
+        <div class="panier" id="panier2">
+          <div class="premier_box">
+            <div class="image_titre">
+              <img src="keyboard.webp" alt="keyboard" />
+              <div class="titre">
+                <h1>Product Name</h1>
+                <span>Variant</span>
+                <h1>$1900</h1>
+                <p>Shipping $150</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="delete_plus">
+            <div class="delete_like">
+              <button class="dl" id="hideButton2">
+                <img src="delete.png" alt="delete" />
+              </button>
+            </div>
+            <div class="plus_moindx">
+              <button onclick="plusContiter2()">+</button>
+              <h3 class="BUT2">1</h3>
+              <button onclick="minusContiter2()">-</button>
+            </div>
+          </div>
+        </div>
+        <div class="panier" id="panier3">
+          <div class="premier_box">
+            <div class="image_titre">
+              <img src="keyboard.webp" alt="keyboard" />
+              <div class="titre">
+                <h1>Product Name</h1>
+                <span>Variant</span>
+                <h1>$1900</h1>
+                <p>Shipping $150</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="delete_plus">
+            <div class="delete_like">
+              <button class="dl" id="hideButton3">
+                <img src="delete.png" alt="delete" />
+              </button>
+            </div>
+            <div class="plus_moindx">
+              <button onclick="plusContiter3()">+</button>
+              <h3 class="BUT3">1</h3>
+              <button onclick="minusContiter3()">-</button>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="X">
+          <div class="total_prix">
+            <h2>TOTAL Prix :</h2>
+            <h2 class="TT">5700 $</h2>
+          </div>
+          <div class="pey_card">
+            <a href="shipping.html">
+              <button class="Checkout">Checkout</button>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <section id="premierparte">
+        <section class="premiersection">
+          <img src="keyboard.webp" alt="Slider" class="princip" />
+          <div class="photo_beta">
+            <img src="keyboard.webp" alt="Slider" />
+            <img src="keyboard.webp" alt="Slider" />
+            <img src="keyboard.webp" alt="Slider" />
+            <img src="keyboard.webp" alt="Slider" />
+          </div>
+        </section>
+        <section class="sectiondeux">
+          <h1>
+            My Product Name ,<br />
+            LX-21 I'm Try to write samething
+          </h1>
+          <div class="BUT">
+            <div class="RT">
+              <img src="Star.png" alt="" />
+              <h3>5.0</h3>
+            </div>
+            <hr />
+            <p>Sold 120</p>
+          </div>
+          <p>
+            Product Name Taking this place <br />
+            Hello hello Product Name taking<br />
+            Hello hello<br />
+            Product Name Taking this place<br />
+            Hello hello
+          </p>
+          <div class="heart">
+            <div class="rate_heart">
+              <img src="heart.png" alt="heart" />
+              <p>129</p>
+            </div>
+          </div>
+          <h1 class="prix_slider">1900$</h1>
+          <p>Size</p>
+          <div class="case_taille">
+            <span>XXL</span>
+            <span>XL</span>
+            <span>L</span>
+            <span>M</span>
+          </div>
+          <h2>Color</h2>
+          <div class="circle_color">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </section>
+        <section id="sectiontrois">
+          <div class="board_princip">
+            <div class="sign_up">
+              <a href="">Sing up</a>
+              <p>Morocco</p>
+            </div>
+            <hr />
+            <div class="secend_part">
+              <h2>Shipping</h2>
+              <p>
+                From casa blanca to morocco in feofx<br />
+                delevery en May 29
+              </p>
+              <h2>ds.dility</h2>
+              <p>
+                20$ Plachez services<br />
+                additional 5% of 4 pieces or errors
+              </p>
+            </div>
+            <div class="plus_moin">
+              <span>+</span>
+              <h3>1</h3>
+              <span>-</span>
+            </div>
+            <hr />
+            <div class="add_card">
+              <input type="submit" value="Add Card" />
+            </div>
+            <div class="bey_new">
+              <input type="submit" value="Bey New" />
+            </div>
+            <div class="contact">
+              <a href="">
+                <img src="chat.png" alt="chat" />
+                <h2>Chat</h2>
+              </a>
+              <a href="">
+                <img src="share.png" alt="share" />
+                <h2>Share</h2>
+              </a>
+            </div>
+          </div>
+        </section>
+      </section>
+      <hr />
+
+      <section id="duexemme_part">
+        <div class="disc">
+          <h1>Description</h1>
+          <img src="keyboard.webp" alt="slider" />
+        </div>
+        <div class="PR">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing est, sed do eiusmod
+          tempor incididunt ut labore at<br />
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut afquip<br />
+          ex ea commodo comedat. Duis aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu<br />
+          fugiat nuta pariatur. Excepteur sint occaecat cupidatat non proident,
+          sunt in cuba qui officia deserunt<br />
+          molt anm id est laborum.<br />
+          Lorem ipsum dolor sit amet, consectetur adipiscing sit, sed do eiusmod
+          tempor incididunt ut labore et<br />
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris rasi ut aliqup<br />
+          ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu<br />
+          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt<br />
+          molit anim id est laborum<br />
+          Lorem ipsum dolor sit amet, consectetur adipiscing<br />
+          elit, sed do eiusmod tempor incididunt ut labore et <br />
+          dolore magna aliqua Ut enim ad minim veniam, quis<br />
+          nostrud exercitation ullamco laboris nisi ut aliqup<br />
+          es commodo corsequat. Duis aute irure dolor in<br />
+          reprehendant in voluptate velit esse cillum dolore eu<br />
+          foget rua pariatur. Excepteur sint occaecat<br />
+          cupidatat non proiunt, sunt in culpa qui officia<br />
+          deserunt <br />
+          molt anim id est laborum .<br />
+        </p>
+    </div>
+      </section>
+      <hr />
+      <section id="troixemme_part">
+        <div class="rate_slider">
+          <h1>Reviews</h1>
+          <div class="thestar_rate">
+            <div>
+              <img src="Star.png" alt="" />
+              <img src="Star.png" alt="" />
+              <img src="Star.png" alt="" />
+              <img src="Star.png" alt="" />
+              <img src="Star.png" alt="" />
+            </div>
+            <p>4.5 of 5.0</p>
+          </div>
+          <p class="totall">4.5 corwors totags</p>
+          <div class="rate_reponse">
+            <label >5.0</label>
+            <input type="range" value="80"/>
+            <label >80%</label>
+          </div>
+          <div class="rate_reponse">
+            <label>4.0</label>
+            <input type="range" value="20" />
+            <label >7%</label>
+          </div>
+          <div class="rate_reponse">
+            <label >3.0</label>
+            <input type="range" value="0"/>
+            <label >0%</label>
+          </div>
+          <div class="rate_reponse">
+            <label >2.0</label>
+            <input type="range" value="0"/>
+            <label >0%</label>
+          </div>
+          <div class="rate_reponse">
+            <label >1.0</label>
+            <input type="range" value="0" />
+            <label >0%</label>
+          </div>
+          </div>
+        </div>
+        <hr>
+        <div class="users"> 
+                <hr class="diviseur">
+            <div class="user">
+            <div class="user_space">
+                <span>
+                    <img src="user1.jfif" alt="">
+                 <div class="select_all">
+                    <div class="paragraph">
+                     <h2>User Name</h2>
+                   <p>See il coolget Dief</p>
+                    </div>
+                    <div class="stars_gold">
+                    <img src="stare_gold.png" alt="">
+                    <img src="stare_gold.png" alt="">
+                    <img src="stare_gold.png" alt="">
+                    <img src="stare_gold.png" alt="">
+                    <img src="stare_gold.png" alt="">
+                  </div>
+            </div>
+                </span>  
+                <p>Learen ipsum dquipw sit annet , consecateur adipiscing aut , sed do smed senpor<br>
+                    inciddent ut labgin et doiore magne afrique.</p>
+                </div>
+                <div class="user_space">
+                    <span>
+                        <img src="user2.jpg" alt="">
+                        <div class="select_all">
+                            <div class="paragraph">
+                             <h2>User Name</h2>
+                           <p>See il coolget Dief</p>
+                            </div>
+                            <div class="stars_gold">
+                            <img src="stare_gold.png" alt="">
+                            <img src="stare_gold.png" alt="">
+                            <img src="stare_gold.png" alt="">
+                            <img src="stare_gold.png" alt="">
+                            <img src="stare_gold.png" alt="">
+                          </div>
+                    </div>
+                    </span>  
+                    <p>Learen ipsum dquipw sit annet , consecateur adipiscing aut , sed do smed senpor<br>
+                        inciddent ut labgin et doiore magne afrique.</p>
+                    </div>
+            <div class="user_space">
+            <span>
+                <img src="user3.jfif" alt="">
+                <div class="select_all">
+                    <div class="paragraph">
+                     <h2>User Name</h2>
+                   <p>See il coolget Dief</p>
+                    </div>
+                    <div class="stars_gold">
+                    <img src="stare_gold.png" alt="">
+                    <img src="stare_gold.png" alt="">
+                    <img src="stare_gold.png" alt="">
+                    <img src="stare_gold.png" alt="">
+                    <img src="stare_gold.png" alt="">
+                  </div>
+            </div>
+            </span>  
+            <p>Learen ipsum dquipw sit annet , consecateur adipiscing aut , sed do smed senpor<br>
+                inciddent ut labgin et doiore magne afrique.</p>
+            </div>
+        </div>
+        </div>
+      </section>
+      <hr>
+      <section id="more_product">
+            <h1>Recommended Products</h1>
+            <div class="recommended">
+                <a href="details.html" target="_blank">
+                    <div class="produit1">
+                        <img src="keyboard.webp" alt="keyboard" class="board" />
+                        <div class="prix_l">
+                            <span>$1200</span>
+                            <span>$1500</span>
+                            <span></span>
+                          </div>
+                        <p>
+                          hello anass , hello aziz , hello world , hello anass , hello aziz
+                          , hello world , hello me
+                        </p>
+                        <div class="BUT">
+                          <div class="RT">
+                            <img src="Star.png" alt="" />
+                            <h3>5.0</h3>
+                          </div>
+                          <hr class="linee" />
+                          <p>Sold 120</p>
+                          <div class="RT2">
+                            <img src="Mall.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                </a>
+                <a href="details.html" target="_blank">
+                    <div class="produit1">
+                        <img src="keyboard.webp" alt="keyboard" class="board" />
+                        <div class="prix_l">
+                            <span>$1200</span>
+                            <span>$1500</span>
+                            <span></span>
+                          </div>
+                        <p>
+                          hello anass , hello aziz , hello world , hello anass , hello aziz
+                          , hello world , hello me
+                        </p>
+                        <div class="BUT">
+                          <div class="RT">
+                            <img src="Star.png" alt="" />
+                            <h3>5.0</h3>
+                          </div>
+                          <hr class="linee" />
+                          <p>Sold 120</p>
+                          <div class="RT2">
+                            <img src="Mall.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                </a>
+                <a href="details.html" target="_blank">
+                    <div class="produit1">
+                        <img src="keyboard.webp" alt="keyboard" class="board" />
+                        <div class="prix_l">
+                            <span>$1200</span>
+                            <span>$1500</span>
+                            <span></span>
+                          </div>
+                        <p>
+                          hello anass , hello aziz , hello world , hello anass , hello aziz
+                          , hello world , hello me
+                        </p>
+                        <div class="BUT">
+                          <div class="RT">
+                            <img src="Star.png" alt="" />
+                            <h3>5.0</h3>
+                          </div>
+                          <hr class="linee" />
+                          <p>Sold 120</p>
+                          <div class="RT2">
+                            <img src="Mall.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                </a>
+                <a href="details.html" target="_blank">
+                    <div class="produit1">
+                        <img src="keyboard.webp" alt="keyboard" class="board" />
+                        <div class="prix_l">
+                            <span>$1200</span>
+                            <span>$1500</span>
+                            <span></span>
+                          </div>
+                        <p>
+                          hello anass , hello aziz , hello world , hello anass , hello aziz
+                          , hello world , hello me
+                        </p>
+                        <div class="BUT">
+                          <div class="RT">
+                            <img src="Star.png" alt="" />
+                            <h3>5.0</h3>
+                          </div>
+                          <hr class="linee" />
+                          <p>Sold 120</p>
+                          <div class="RT2">
+                            <img src="Mall.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                </a>
+            </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footere">
+        <a href="">About</a>
+        <a href="">Support</a>
+        <a href="">FQA</a>
+        <p>copy right 2023</p>
+      </div>
+    </footer>
+  </body>
+</html>
+<script src="style.js"></script>
