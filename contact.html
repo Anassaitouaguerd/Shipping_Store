@@ -17,26 +17,138 @@
             ><input type="text" placeholder="cherchez un produit"
           /></a>
         </div>
-        <nav>
-          <div class="aconte">
-            <a href="">Sing In </a>
-            <a href="">Create account</a>
-          </div>
-          <a href="" class="MR">
-            <img src="Morocco.png" alt="Morocco" />
-          </a>
 
-          <a href="shipping.html" target="_blank" class="MR">
+        <div class="aconte">
+          <a href="">Sing In </a>
+          <a href="">Create account</a>
+          <a href="contact.html">contact-us</a>
+        </div>
+        <a href="" class="MR">
+          <img src="Morocco.png" alt="Morocco" />
+        </a>
+        <nav class="space_batween_menu_panier">
+          <button onclick="show()" class="Shippingcrd">
             <img src="Shopping Cart.png" alt="Shipping" />
-          </a>
-          <div class="burgernav"></div>
-        </nav>
-        <nav class="nav_menu">
-          <a href=""><img src="menu.png" alt="" /></a>
+          </button>
+          <button class="nav_menu" onclick="show_menu()">
+            <img src="menu.png" alt="" />
+            <button id="clos2" onclick="show()">
+              <img src="effacer.png" alt="" />
+            </button>
+          </button>
         </nav>
       </div>
     </header>
     <main id="PR">
+      <nav class="sidebar_panier">
+        <button id="clos" onclick="show()">
+          <img src="effacer.png" alt="" />
+        </button>
+        <div class="chop_title">
+          <h1>Shopping</h1>
+          <h1>card</h1>
+        </div>
+        <div class="panier" id="panier1">
+          <div class="premier_box">
+            <div class="image_titre">
+              <img src="keyboard.webp" alt="keyboard" />
+              <div class="titre">
+                <h1>Product Name</h1>
+                <span>Variant</span>
+                <h1>$1900</h1>
+                <p>Shipping $150</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="delete_plus">
+            <div class="delete_like">
+              <button class="dl" id="hideButton1">
+                <img src="delete.png" alt="delete" />
+              </button>
+            </div>
+            <div class="plus_moindx">
+              <button onclick="plusContiter()">+</button>
+              <h3 class="BUT">1</h3>
+              <button onclick="minusContiter()">-</button>
+            </div>
+          </div>
+        </div>
+        <div class="panier" id="panier2">
+          <div class="premier_box">
+            <div class="image_titre">
+              <img src="keyboard.webp" alt="keyboard" />
+              <div class="titre">
+                <h1>Product Name</h1>
+                <span>Variant</span>
+                <h1>$1900</h1>
+                <p>Shipping $150</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="delete_plus">
+            <div class="delete_like">
+              <button class="dl" id="hideButton2">
+                <img src="delete.png" alt="delete" />
+              </button>
+            </div>
+            <div class="plus_moindx">
+              <button onclick="plusContiter2()">+</button>
+              <h3 class="BUT2">1</h3>
+              <button onclick="minusContiter2()">-</button>
+            </div>
+          </div>
+        </div>
+        <div class="panier" id="panier3">
+          <div class="premier_box">
+            <div class="image_titre">
+              <img src="keyboard.webp" alt="keyboard" />
+              <div class="titre">
+                <h1>Product Name</h1>
+                <span>Variant</span>
+                <h1>$1900</h1>
+                <p>Shipping $150</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="delete_plus">
+            <div class="delete_like">
+              <button class="dl" id="hideButton3">
+                <img src="delete.png" alt="delete" />
+              </button>
+            </div>
+            <div class="plus_moindx">
+              <button onclick="plusContiter3()">+</button>
+              <h3 class="BUT3">1</h3>
+              <button onclick="minusContiter3()">-</button>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="X">
+          <div class="total_prix">
+            <h2>TOTAL Prix :</h2>
+            <h2 class="TT">5700 $</h2>
+          </div>
+          <div class="pey_card">
+            <a href="shipping.html">
+              <button class="Checkout">Checkout</button>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <nav class="nav_bergur">
+        <div class="aconte_P">
+          <a href="">Sing In </a>
+          <a href="">Create account</a>
+          <a href="contact.html">contact_us</a>
+        </div>
+        <a href="" class="MR_P">
+          <img src="Morocco.png" alt="Morocco" />
+        </a>
+      </nav>
       <section class="contact_us">
         <div class="backclr">
           <div class="us">
@@ -70,26 +182,26 @@
             <h1>Contact -</h1>
             <h1>Us</h1>
           </div>
-          <form>
+          <form action="">
             <div class="F">
               <label>First Name :</label>
               <label>Last Name :</label>
             </div>
             <div class="full_name">
-              <input type="text" placeholder="First Name" required />
-              <input type="text" placeholder="Last Name" required />
+              <input type="text" placeholder="First Name" id="firstName" />
+              <input type="text" placeholder="Last Name" id="lastName" />
             </div>
             <div class="E">
               <label>Email :</label>
             </div>
             <div class="EM">
-              <input type="email" placeholder="Email@gmail.com" required />
+              <input type="email" placeholder="Email@gmail.com" id="gmail" />
             </div>
             <div class="N">
               <label>Number Phone :</label>
             </div>
             <div class="NUM">
-              <input type="tel" placeholder="Number tel" required />
+              <input type="tel" placeholder="Number tel" id="numeroTele" />
             </div>
             <div class="S">
               <label>Message :</label>
@@ -100,11 +212,11 @@
                 cols="30"
                 rows="10"
                 placeholder="Message"
-                required
+                id="messageClient"
               ></textarea>
             </div>
             <div class="envoyer">
-              <button type="submit">Envoyer</button>
+              <button type="submit" id="submitInfo">Envoyer</button>
             </div>
           </form>
           <div class="contact_tablet">
@@ -143,3 +255,4 @@
     </footer>
   </body>
 </html>
+<script src="style.js"></script>
