@@ -10,7 +10,6 @@ let prixTOTAL = 0;
 function show() {
   side[0].style.display = "block";
   sideClose.style.display = "block";
-  console.log(sideClose);
   sideClose.addEventListener("click", () => (side[0].style.display = "none"));
   sideClose.addEventListener("click", () => (sideClose.style.display = "none"));
 }
@@ -86,7 +85,8 @@ function prixTotal() {
 }
 function prixTotal1() {
   prixTOTAL1 = numberTotal + numberTotal2 + numberTotal3;
-  totalPrix.innerHTML = prixTOTAL1 + " $";
+  totalPrix1.innerHTML = prixTOTAL1 + " $";
+  prixTotal();
 }
 
 // delet product
@@ -121,21 +121,25 @@ const produit_delet1 = document.getElementById("delet_produit");
 const produit_delet2 = document.getElementById("delet_produit2");
 const produit_delet3 = document.getElementById("delet_produit3");
 const button_delet = document.getElementsByClassName("hideProduite");
+console.log(button_delet[0]);
 
-button_delet[0].addEventListener("click", function () {
+button_delet[0]?.addEventListener("click", function () {
   produit_delet1.style.display = "none";
   numberTotal *= 0;
   prixTotal();
+  prixTotal1();
 });
-button_delet[1].addEventListener("click", function () {
+button_delet[1]?.addEventListener("click", function () {
   produit_delet2.style.display = "none";
   numberTotal2 *= 0;
   prixTotal();
+  prixTotal1();
 });
-button_delet[2].addEventListener("click", function () {
+button_delet[2]?.addEventListener("click", function () {
   produit_delet3.style.display = "none";
   numberTotal3 *= 0;
   prixTotal();
+  prixTotal1();
 });
 
 //premier product
@@ -195,3 +199,54 @@ function minusContiter_two3() {
     prixTotal1();
   }
 }
+const nav_menu = document.getElementsByClassName("nav_menu");
+const navberger = document.getElementsByClassName("nav_bergur");
+const sideClose2 = document.querySelector("#clos2");
+function show_menu() {
+  navberger[0].style.display = "flex";
+  nav_menu[0].style.visibility = "hidden";
+  sideClose2.style.display = "block";
+  sideClose2.addEventListener(
+    "click",
+    () => (navberger[0].style.display = "none")
+  );
+  sideClose2.addEventListener(
+    "click",
+    () => (nav_menu[0].style.visibility = "visible")
+  );
+  sideClose2.addEventListener("click", () => (side[0].style.display = "none"));
+  sideClose2.addEventListener(
+    "click",
+    () => (sideClose2.style.display = "none")
+  );
+}
+
+// validation les informations
+
+document.forms[0].addEventListener("submit", function (event) {
+  event.preventDefault();
+  let firstName = document.getElementById("firstName").value;
+  let lastName = document.getElementById("lastName").value;
+  let gmail = document.getElementById("gmail").value;
+  let numeroTele = document.getElementById("numeroTele").value;
+  let message = document.getElementById("messageClient").value;
+  if (firstName === "") {
+    alert("entre your first name ");
+  }
+  if (lastName === "") {
+    alert("entre your last name ");
+  }
+
+  let regex_gmail = /^[a-zA-Z0-9._-]+@(gmail|outlook|hotmail)\.[a-z]{2,4}$/;
+
+  if (!gmail.match(regex_gmail)) {
+    alert("your gmail is wrong");
+  }
+
+  if (numeroTele === "") {
+    alert("your phone number is wrong");
+  }
+  if (message === "") {
+    alert("write your message ");
+  }
+});

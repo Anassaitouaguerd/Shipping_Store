@@ -51,12 +51,16 @@ header {
   box-shadow: 1px 1px 20px #f4c82d;
   transition: 0.3s;
 }
+.space_batween_menu_panier {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
 .Shippingcrd {
   background-color: white;
   border: none;
   width: 50px;
   height: 50px;
-  margin-right: 10px;
 }
 .nav_menu {
   display: none;
@@ -758,7 +762,7 @@ p {
 
   height: 800px;
   width: 500px;
-  background-image: url("backcontact 1.png");
+  background-image: url("backcontact_1.png");
 }
 .us {
   display: flex;
@@ -794,6 +798,9 @@ p {
   width: 50%;
   margin-top: 4%;
   margin-right: 4%;
+}
+.information input {
+  text-align: center;
 }
 .full_name {
   display: flex;
@@ -894,6 +901,7 @@ p {
   height: 81%;
   background-color: #e2e2e2;
   border-radius: 10px;
+  box-shadow: 2px 2px 20px 10px #b8b8b8;
 }
 .panier {
   display: flex;
@@ -966,14 +974,52 @@ p {
 #clos {
   position: absolute;
   display: none;
-  right: 10px;
-  border: solid 2px;
+  right: 1px;
+  border: solid 3px black;
+  background-color: #e2e2e2;
+  border: none;
+  width: 40px;
+  height: 40px;
+}
+#clos2 {
+  position: absolute;
+  display: none;
+  right: 0px;
+  border: solid 3px black;
   background-color: white;
   border: none;
   width: 40px;
   height: 40px;
 }
-
+.nav_menu {
+  height: 50px;
+  width: 50px;
+}
+.nav_bergur {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 60px;
+  right: 0px;
+  width: 300px;
+  height: 500px;
+  background-color: rgb(234, 204, 174);
+  border-radius: 10px;
+  box-shadow: 2px 2px 25px 10px rgb(234, 204, 174);
+}
+.aconte_P {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.aconte_P a {
+  color: #334155;
+  padding-bottom: 25px;
+  margin-bottom: 5px;
+}
 @media screen and (max-width: 1450px) {
   .amazon a {
     width: 50px;
@@ -1109,6 +1155,9 @@ p {
   .aconte a:nth-child(2) {
     display: none;
   }
+  .aconte a:nth-child(3) {
+    display: none;
+  }
   .aconte a:nth-child(1) {
     margin-left: 70%;
   }
@@ -1124,6 +1173,11 @@ p {
   .footere {
     display: flex;
     flex-wrap: wrap;
+  }
+  .sidebar_panier {
+    right: 0%;
+    width: 400px;
+    height: 650px;
   }
 }
 @media screen and (max-width: 770px) {
@@ -1154,10 +1208,22 @@ p {
   .cadre {
     justify-content: none;
   }
+  #sec {
+    display: block;
+  }
+  .accessoires {
+    width: 100%;
+    height: 60px;
+  }
   .accessoires ul {
     margin-left: 0px;
-    width: 100px;
+    margin-top: 5px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
   }
+
   .accessoires a {
     color: #e2e8f0;
     font-size: small;
@@ -1169,15 +1235,16 @@ p {
     height: 20px;
     padding-left: 0px;
   }
-  #sec {
-    justify-content: space-around;
-  }
+
   .remise {
     justify-content: space-evenly;
     flex-wrap: wrap;
   }
   .best {
-    grid-template-columns: repeat(2, 300px);
+    margin-left: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    margin: 0px;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
   }
@@ -1236,6 +1303,12 @@ p {
     display: flex;
     flex-wrap: wrap;
   }
+  .Shippingcrd {
+    display: block;
+  }
+  .nav_bergur {
+    width: 200px;
+  }
 }
 @media screen and (max-width: 432px) {
   .amazon a {
@@ -1276,6 +1349,26 @@ p {
   .gmail img {
     width: 40px;
     height: 40px;
+  }
+  .sidebar_panier {
+    right: 0%;
+    width: 300px;
+    height: 900px;
+  }
+  .panier {
+    display: block;
+    text-align: center;
+  }
+  .space_batween_menu_panier {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .Checkout {
+    margin-left: 0px;
+    width: 200px;
+  }
+  .summary {
+    width: 100%;
   }
   .footere {
     display: flex;
