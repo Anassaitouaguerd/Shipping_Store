@@ -223,7 +223,7 @@ function show_menu() {
 
 // validation les informations
 
-document.forms[0].addEventListener("submit", function (event) {
+document.forms[0]?.addEventListener("submit", function (event) {
   event.preventDefault();
   let firstName = document.getElementById("firstName").value;
   let lastName = document.getElementById("lastName").value;
